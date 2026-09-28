@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0a0a0f;
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0e0e16;
+    border-bottom: 1px solid #1d1d2a;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #7c5cff;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #aaaabd;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.hero {
+    min-height: 520px;
+    padding: 100px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:
+        radial-gradient(circle at 80% 30%, rgba(124, 92, 255, 0.2), transparent 35%),
+        radial-gradient(circle at 20% 80%, rgba(0, 204, 255, 0.08), transparent 35%),
+        #0a0a0f;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 82px);
+    line-height: 0.95;
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #7c5cff;
+}
+
+.hero p {
+    color: #9c9cad;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 25px;
+    border-radius: 8px;
+    background: #7c5cff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #6847ee;
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 70px 7%;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.game-card {
+    background: #11111a;
+    border: 1px solid #20202d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.game-card:hover {
+    transform: translateY(-6px);
+    border-color: #7c5cff;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.game-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.game-card-content {
+    padding: 18px;
+}
+
+.game-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.game-card p {
+    color: #888899;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.game-tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: #1c1830;
+    color: #9c82ff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+footer {
+    padding: 30px 7%;
+    border-top: 1px solid #1d1d2a;
+    color: #777788;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 80px 5%;
+    }
+
+    section {
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+}
